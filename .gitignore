@@ -1,0 +1,9 @@
+*.csv
+venv
+Time_Series_Library_main/.idea
+Time_Series_Library_main/dataset
+Time_Series_Library_main/test_results
+Time_Series_Library_main/results
+Time_Series_Library_main/checkpoints
+Time_Series_Library_main/scripts
+.kube/cache/

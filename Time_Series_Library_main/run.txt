@@ -1,0 +1,13 @@
+
+
+python -u run.py --task_name long_term_forecast --is_training 1 --root_path ./dataset/ --data_path qps_total.csv --model_id qps_96_96 --model DLinear --data custom --features M --seq_len 96 --label_len 48 --pred_len 96 --e_layers 2 --d_layers 1 --factor 3 --enc_in 9 --dec_in 9 --c_out 9 --des 'Exp' --itr 1
+python -u run.py --task_name long_term_forecast --is_training 1 --root_path ./dataset/ --data_path output4.csv --model_id qps_120_60 --model RWKV  --data custom --features M --seq_len 120 --label_len 30 --pred_len 60 --e_layers 2 --d_layers 1 --factor 3 --enc_in 4 --dec_in 4 --c_out 4 --des 'Exp' --itr 1 --d_model 512 --d_ff 256 --batch_size 16 --learning_rate 0.0005
+
+
+(21)python -u run.py --task_name long_term_forecast --is_training 1 --root_path ./dataset/ --data_path output4.csv --model_id qps_120_60 --model Autoformer --data custom --features M --seq_len 120 --label_len 30 --pred_len 60 --e_layers 2 --d_layers 1 --factor 3 --enc_in 4 --dec_in 4 --c_out 4 --des 'Exp' --itr 1 --d_model 512 --d_ff 512 --batch_size 16 --learning_rate 0.0005
+
+(22)python -u run.py --task_name long_term_forecast --is_training 1 --root_path ./dataset/ --data_path output4.csv --model_id qps_120_60 --model FEDformer --data custom --features M --seq_len 120 --label_len 30 --pred_len 60 --e_layers 2 --d_layers 1 --factor 3 --enc_in 4 --dec_in 4 --c_out 4 --des 'Exp' --itr 1 --d_model 512 --d_ff 512 --batch_size 16 --learning_rate 0.0005
+
+(23)python -u run.py --task_name long_term_forecast --is_training 1 --root_path ./dataset/ --data_path output4.csv --model_id qps_120_60 --model Crossformer --data custom --features M --seq_len 120 --label_len 30 --pred_len 60 --e_layers 2 --d_layers 1 --factor 3 --enc_in 4 --dec_in 4 --c_out 4 --des 'Exp' --itr 1 --d_model 512 --d_ff 512 --batch_size 16 --learning_rate 0.0005
+
+(20)python -u run.py --task_name long_term_forecast --is_training 1 --root_path ./dataset/ --data_path output4.csv --model_id qps_120_60 --model Informer --data custom --features M --seq_len 120 --label_len 30 --pred_len 60 --e_layers 2 --d_layers 1 --factor 3 --enc_in 4 --dec_in 4 --c_out 4 --des 'Exp' --itr 1 --d_model 256 --d_ff 512 --batch_size 16 --learning_rate 0.0005
